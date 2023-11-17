@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="home.html"><img src="img/Logo.png" alt="logo" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="home.html">Home</a></li>
+
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn active">Products</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="new-mobile.html">New Mobiles</a>
+                        <a href="used-mobile.html">Used Mobiles</a>
+                        <a href="accessories.html">Accessories</a>
+                    </div>
+                </div>
+
+                <!-- <li><a href="products.html">Used Mobiles</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <img src="img/cross.svg" id="close">
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <img src="img/bars-solid.svg" id="bar">
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/product-1.png" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+
+                <div class="small-img-col">
+                    <img src="img/product-1.png" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/productbg.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/productbg.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/productbg.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / new-mobiles</h6>
+            <h4>Iphone</h4>
+            <h2>Rs.100000</h2>
+
+            <button class="normal">Contact</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum fugit ea nesciunt ut aliquid odit quia ad fuga fugiat voluptates sed et distinctio sint reiciendis nam labore itaque, error at aut. Vero aliquid corporis, unde, quidem maiores mollitia accusamus voluptatem voluptate consectetur nostrum expedita ipsa, amet dolorum? Suscipit esse delectus quibusdam placeat quasi iure omnis.</span>
+        </div>
+    </section>
+    
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Buy a brand new mobile phone in very good price</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/product-1.png" alt="">
+                <div class="des">
+                    <span>IPhone</span>
+                    <h5>The ultimate iPhone.</h5>
+                    <h4>Rs.100000</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product-1.png" alt="">
+                <div class="des">
+                    <span>IPhone</span>
+                    <h5>The ultimate iPhone.</h5>
+                    <h4>Rs.100000</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product-1.png" alt="">
+                <div class="des">
+                    <span>IPhone</span>
+                    <h5>The ultimate iPhone.</h5>
+                    <h4>Rs.100000</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/product-1.png" alt="">
+                <div class="des">
+                    <span>IPhone</span>
+                    <h5>The ultimate iPhone.</h5>
+                    <h4>Rs.100000</h4>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest <span>products!</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <img src="img/Logo.png" alt="">
+            <h3>&#169;2023|All rights reserved by Next-Phone.</h3>
+        </div>
+    </footer>
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
